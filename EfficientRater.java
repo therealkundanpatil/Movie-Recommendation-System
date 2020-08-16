@@ -72,4 +72,8 @@ public class EfficientRater implements Rater {
 	public void setMyRatings(HashMap<String, Rating> myRatings) {
 		this.myRatings = myRatings;
 	}
+	
+	public HashMap<String,Rating> getMyRatings(){
+		return myRatings;
+	}
 }

@@ -17,19 +17,20 @@ public class Movie {
 	private String country;
 	private String poster;
 	private int minutes;
-	
+
 	public Movie() {
-		
+
 	}
-	
-	public Movie(String movieId,String movieTitle,String year,String movieGenre) {
+
+	public Movie(String movieId, String movieTitle, String year, String movieGenre) {
 		this.movieId = movieId.trim();
 		this.movieTitle = movieTitle.trim();
 		this.year = Integer.parseInt(year.trim());
 		this.movieGenre = movieGenre;
 	}
-	
-	public Movie(String movieId,String movieTitle,String year,String country, String movieGenre,String movieDirector,int minutes, String poster) {
+
+	public Movie(String movieId, String movieTitle, String year, String country, String movieGenre,
+			String movieDirector, int minutes, String poster) {
 		this.movieId = movieId.trim();
 		this.movieTitle = movieTitle.trim();
 		this.year = Integer.parseInt(year.trim());
@@ -78,7 +79,5 @@ public class Movie {
 				+ movieDirector + ", movieGenre=" + movieGenre + ", country=" + country + ", poster=" + poster
 				+ ", minutes=" + minutes + "]";
 	}
-	
-	
-	
+
 }
