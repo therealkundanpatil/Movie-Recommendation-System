@@ -22,7 +22,7 @@ public class FirstRatings {
 
 	public ArrayList<Movie> loadMovies(String fileName) {
 		ArrayList<Movie> movieList = new ArrayList<>();
-		String path = "src\\data\\" + fileName;
+		String path = "src\\movierecommendation\\data\\" + fileName;
 		File f = new File(path);
 		FileReader fileReader = null;
 		CSVReader csvReader = null;
@@ -110,7 +110,7 @@ public class FirstRatings {
 
 	public ArrayList<EfficientRater> loadRaters(String fileName) {
 		ArrayList<EfficientRater> rater = new ArrayList<EfficientRater>();
-		String path = "src\\data\\" + fileName;
+		String path = "src\\movierecommendation\\data\\" + fileName;
 		File f = new File(path);
 		FileReader fileReader = null;
 		CSVReader csvReader = null;

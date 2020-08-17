@@ -36,7 +36,7 @@ public class RaterDatabase {
 
 	public static void addRatings(String fileName) {
 		initialize();
-		String path = "src\\data\\" + fileName;
+		String path = "src\\movierecommendation\\data\\" + fileName;
 		File f = new File(path);
 		FileReader fileReader = null;
 		CSVReader csvReader = null;
